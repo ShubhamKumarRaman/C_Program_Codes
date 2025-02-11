@@ -3,8 +3,17 @@
 void main()
 {
     int num;
-    int i =0;
-    while(i<num){
-        
+    int i = 2;
+    printf("\nEnter a number: ");
+    scanf("%d", &num);
+    while (i < num)
+    {
+        if (num % i == 0)
+        {
+            printf("Not a prime Number");
+            return;
+        }
+        i++;
     }
+    printf("Prime Number");
 }
